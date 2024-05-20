@@ -38,7 +38,7 @@ The first lesson is that R is a fancy calculator. Try it out by hitting the "Run
 The answer is unsurprising, but good to know!
 
 ### Now you try
-Try out a few different things in the next code block. Can you figure out how to **multiply 520 by 475**? When you're ready, check your work by clicking "Submit Answer." The "Hints" button will show you a hint if you're confused.
+Try out a few different things in the next code block. Can you figure out how to **multiply 520 by 475**? When you're ready, check your work by clicking "Submit Answer." The "Hints" button <s>will show you a hint if you're confused</s> **does not yet exist**.
 
 ```{webr-r}
 #| label: calculator2
