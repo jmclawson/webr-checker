@@ -25,7 +25,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Relevant links\n\nQuarto\nweb-R\nlearnr\nGitHub repository"
+    "text": "Relevant links\n\nTed Laderas on web-R\nQuarto web-R\nGitHub repository\n\nUltimately, I want something like learnr. It’s clear that webr-checker falls short of that goal, but it might be enough to get me started with web-r in the meantime."
   },
   {
     "objectID": "01-start.html#r-can-save-variables",
