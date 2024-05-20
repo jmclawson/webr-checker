@@ -20,16 +20,16 @@ check_button <- function(answer, chunk = NULL) {
                   sample(c("Yes, that’s right. ",
                            "Yep, looks right to me. ",
                            "I can’t see any errors. ",
-                           "Looks perfect to me.",
+                           "Looks perfect to me. ",
                            "Flawless. "),
                          size = 1),
                   sample(c("Well done!",
                            "",
                            "⭐️⭐️⭐️⭐️⭐️",
                            "You did it!",
-                           "Top-notch work.",
-                           "All this effort is sure to pay off.",
-                           "You should be proud of yourself."),
+                           "Top-notch work!",
+                           "All this effort is sure to pay off!",
+                           "You should be proud of yourself!"),
                          size = 1)
     ) |>
       paste(collapse = "")
