@@ -1,0 +1,9 @@
+---
+title: "webr-trial"
+---
+
+This whole thing is an experiment combining Quarto, R, web-R, and JavaScript.
+
+Lessons:
+
+1. [Starting with R](01-start.qmd)

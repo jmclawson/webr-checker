@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "01-start.html",
+    "href": "01-start.html",
+    "title": "My WebR Demo",
+    "section": "",
+    "text": "This interactive tutorial will introduce you to some basics commands for working with data in R. You’ll occasionally see blocks for modifying code or for writing new code from scratch.\nThis tutorial introduces four ideas:\n\nDoing arithmetic with R.\nAssigning values to variable names in R.\nSaving lists in R.\nWorking with words in R."
+  },
+  {
+    "objectID": "01-start.html#introduction",
+    "href": "01-start.html#introduction",
+    "title": "My WebR Demo",
+    "section": "",
+    "text": "This interactive tutorial will introduce you to some basics commands for working with data in R. You’ll occasionally see blocks for modifying code or for writing new code from scratch.\nThis tutorial introduces four ideas:\n\nDoing arithmetic with R.\nAssigning values to variable names in R.\nSaving lists in R.\nWorking with words in R."
+  },
+  {
+    "objectID": "01-start.html#r-is-a-fancy-calculator",
+    "href": "01-start.html#r-is-a-fancy-calculator",
+    "title": "My WebR Demo",
+    "section": "R is a fancy calculator",
+    "text": "R is a fancy calculator\nThe first lesson is that R is a fancy calculator. Try it out by hitting the “Run Code” button in the code chunk below:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThe answer is unsurprising, but good to know!\n\nNow you try\nTry out a few different things in the next code block. Can you figure out how to multiply 520 by 475? When you’re ready, check your work by clicking “Submit Answer.” The “Hints” button will show you a hint if you’re confused.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPut your code in the box, run it, and then check it.\n\n\nWhere am I looking? Please put your code in the box, run it, and then check it.\n\n\nWowzwers! I can’t see any errors. You should be proud of yourself.\n\n\nNo, that’s not right. But don’t worry. You can have another try. Remember to re-run any changes before you check.\n\n\n\n\nOther operators\nGood job! We may not always need to do complicated math, but it’ll be helpful to know the operators for simple arithmetic, including addition (+), subtraction (-), multiplication (*), and division (/). More complex things will be handled by functions, which we’ll discuss in a future lesson.\n\n\n\nOperator\n\n\nDescription\n\n\nExample\n\n\n\n\n+\n\n\nAddition\n\n\n2 + 3[1] 5\n\n\n\n\n-\n\n\nSubtraction\n\n\n2 - 3[1] -1\n\n\n\n\n*\n\n\nMultiplication\n\n\n2 * 3[1] 6\n\n\n\n\n/\n\n\nDivision\n\n\n2 / 3[1] 0.6666667\n\n\n\n\n^\n\n\nExponent (“to the power of”)  \n\n\n2 ^ 3[1] 8\n\n\n\n\n( )\n\n\nOrder of operations\n\n\n2 ^ (5 - 2)[1] 8\n\n\n\nThe answers in each of these examples is preceded by [1]. Although many of our examples only have one answer as output, we’ll later see the usefulness of these numbers in brackets when the output is a list of values spanning multiple lines."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "01-start.html#r-can-save-variables",
+    "href": "01-start.html#r-can-save-variables",
+    "title": "My WebR Demo",
+    "section": "R can save variables",
+    "text": "R can save variables\nAny old calculator can add and multiply. A fancy calculator can also save values to a variable name. And here we’re talking of variables that are fancier than any you remember from algebra, where “x” and “y” ruled the day. In R, your variable names can be much fancier.\nTo save variables, we’ll use the less-than symbol (&lt;) and the hyphen or minus sign (-) together to make a left-pointing arrow: &lt;-. This means we’re saving whatever is on the right of the arrow into the variable named on the left. For instance, the following code saves the value “1803” to the variable we’re creating called louisiana_purchase:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWhen you save a variable, it’ll look like nothing has happened. But with any variable, we can type its name again to see what values are saved in it. Type louisiana_purchase below to retrieve the value saved under that name:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPut your code in the box, run it, and then check it.\n\n\n🤖 Does not compute… Write some code above. When you’re ready, run it, and then check it.\n\n\nYes, that’s right. You should be proud of yourself.\n\n\nThat’s not what I’m looking for. Try again. Remember to re-run any changes before you check.\n\n\n\nNow you try\nThis example is obviously pretty simple. But we can imagine a scenario where we have two variables or objects that might change over time, while the calculation stays the same. Let’s say, for instance, that we know that a double-spaced page can hold about 300 words, and we have ten pages to read. We’d figure out the total number of words with the following code:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nBut what if the page is single-spaced, and we have 15 pages to read? Using the next code chunk, figure out how many words that is. Modify the first two lines to show 600 words per page and 15 pages to read:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPut your code in the box, run it, and then check it.\n\n\nWhere am I looking? Remember to put your code in the box, run it, and then check it.\n\n\n🙌 Yep, looks right to me. Well done!\n\n\nThat’s not what I’m looking for. Give it another go. Remember to re-run any changes before you check."
+  },
+  {
+    "objectID": "01-start.html#r-can-save-lists",
+    "href": "01-start.html#r-can-save-lists",
+    "title": "My WebR Demo",
+    "section": "R can save lists",
+    "text": "R can save lists\nSometimes it will come in handy to save multiple values to one variable name. Say for instance, you’re the judge of a contest for “cutest dog,” and you want to weigh every puppy when it gets entered. It may be enough just to have a list of weights listed together.\nIn R, we call this list of values a “vector.” (We’ll often use this word interchangeably with the word list, but it’s maybe better to use vector because the other word also has other meanings in R.) And we can save the list like this:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nNotice that a vector needs three components:\n\nThere’s a c at the front.\nParentheses surround everything.\nValues are separated by commas.\n\nAs with saving any variable, it’ll look at first like nothing has happened, but we can type the variable name again to see what values are saved in it:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nNow you try\nThe following definition of a vector with four values has some problems with it. Can you fix them? When you click “Run Code” the error message should be able to give a little bit of guidance, but hints are available, too.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPut your code in the box, run it, and then check it.\n\n\n🤔 I don’t see anything here. Remember to put your code in the box, run it, and then check it.\n\n\nYou got it. 🙂\n\n\nThat’s not what I’m looking for. Give it another go. Remember to re-run any changes before you check."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "webr-trial",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  }
+]

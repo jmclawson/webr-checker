@@ -1,0 +1,10 @@
+---
+title: "About"
+---
+
+Relevant links
+
+1. [Quarto](https://quarto.org)
+2. [web-R](https://quarto-webr.thecoatlessprofessor.com)
+3. [learnr](https://rstudio.github.io/learnr/)
+

@@ -1,0 +1,191 @@
+---
+title: "My WebR Demo"
+format: html
+engine: knitr
+filters:                         
+  - webr  
+include-in-header:
+  file: checker.js
+---
+
+```{r}
+#| include: false
+source("checker.R")
+```
+
+
+## Introduction
+
+This interactive tutorial will introduce you to some basics commands for working with data in R. You'll occasionally see blocks for modifying code or for writing new code from scratch.
+
+This tutorial introduces four ideas:
+
+1. Doing arithmetic with R.
+2. Assigning values to variable names in R.
+3. Saving lists in R.
+4. Working with words in R.
+
+## R is a fancy calculator
+
+The first lesson is that R is a fancy calculator. Try it out by hitting the "Run Code" button in the code chunk below:
+
+```{webr-r}
+#| label: calculator1
+2 + 2
+```
+
+The answer is unsurprising, but good to know!
+
+### Now you try
+Try out a few different things in the next code block. Can you figure out how to **multiply 520 by 475**? When you're ready, check your work by clicking "Submit Answer." The "Hints" button will show you a hint if you're confused.
+
+```{webr-r}
+#| label: calculator2
+
+```
+
+```{r}
+#| echo: false
+#| output: asis
+check_button(247000)
+```
+
+### Other operators
+Good job! We may not always need to do complicated math, but it'll be helpful to know the operators for simple arithmetic, including addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`). More complex things will be handled by *functions*, which we'll discuss in a future lesson.
+
+<table>
+  <tr VALIGN=TOP>
+    <th>Operator</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+  <tr VALIGN=TOP>
+    <td style="padding-bottom:20px;">`+`</td>
+    <td style="padding-bottom:20px;">Addition</td>
+    <td style="padding-bottom:20px;">`2 + 3`<br>`[1] 5`<br> </td>
+  </tr>
+  <tr VALIGN=TOP>
+    <td style="padding-bottom:20px;">`-`</td>
+    <td style="padding-bottom:20px;">Subtraction</td>
+    <td style="padding-bottom:20px;">`2 - 3`<br>`[1] -1`<br> </td>
+  </tr>
+  <tr VALIGN=TOP>
+    <td style="padding-bottom:20px;">`*`</td>
+    <td style="padding-bottom:20px;">Multiplication</td>
+    <td style="padding-bottom:20px;">`2 * 3`<br>`[1] 6`<br> </td>
+  </tr>
+  <tr VALIGN=TOP>
+    <td style="padding-bottom:20px;">`/`</td>
+    <td style="padding-bottom:20px;">Division</td>
+    <td style="padding-bottom:20px;">`2 / 3`<br>`[1] 0.6666667`<br> </td>
+  </tr>
+  <tr VALIGN=TOP>
+    <td style="padding-bottom:20px;">`^`</td>
+    <td style="padding-bottom:20px;">Exponent ("to the power of") &nbsp;</td>
+    <td style="padding-bottom:20px;">`2 ^ 3`<br>`[1] 8`<br> </td>
+  </tr>
+  <tr VALIGN=TOP>
+    <td style="padding-bottom:20px;">`( )`</td>
+    <td style="padding-bottom:20px;">Order of operations</td>
+    <td style="padding-bottom:20px;">`2 ^ (5 - 2)`<br>`[1] 8`<br> </td>
+  </tr>
+</table>
+
+The answers in each of these examples is preceded by `[1]`. Although many of our examples only have one answer as output, we'll later see the usefulness of these numbers in brackets when the output is a list of values spanning multiple lines.
+
+## R can save variables
+
+Any old calculator can add and multiply. A *fancy* calculator can also save values to a variable name. And here we're talking of variables that are fancier than any you remember from algebra, where "x" and "y" ruled the day. In R, your variable names can be much fancier. 
+
+To save variables, we'll use the less-than symbol (`<`) and the hyphen or minus sign (`-`) together to make a left-pointing arrow: `<-`. This means we're saving whatever is on the right of the arrow into the variable named on the left. For instance, the following code saves the value "1803" to the variable we're creating called `louisiana_purchase`:
+
+```{webr-r}
+#| label: louisiana1
+louisiana_purchase <- 1803
+```
+
+When you save a variable, it'll look like nothing has happened. But with any variable, we can type its name again to see what values are saved in it. Type `louisiana_purchase` below to retrieve the value saved under that name:
+
+```{webr-r}
+#| label: louisiana2
+
+```
+
+```{r}
+#| echo: false
+#| output: asis
+check_button(1803)
+```
+
+
+### Now you try
+
+This example is obviously pretty simple. But we can imagine a scenario where we have two variables or objects that might change over time, while the calculation stays the same. Let's say, for instance, that we know that a double-spaced page can hold about 300 words, and we have ten pages to read. We'd figure out the total number of words with the following code:
+
+```{webr-r}
+#| label: words1
+words_per_page <- 300
+pages_to_read <- 10
+
+words_per_page * pages_to_read
+```
+
+But what if the page is single-spaced, and we have 15 pages to read? Using the next code chunk, figure out how many words that is. Modify the first two lines to show 600 words per page and 15 pages to read:
+
+```{webr-r}
+#| label: words2
+words_per_page <- 300
+pages_to_read <- 10
+
+words_per_page * pages_to_read
+```
+
+```{r}
+#| echo: false
+#| output: asis
+check_button(9000)
+```
+
+## R can save lists
+
+Sometimes it will come in handy to save multiple values to one variable name. Say for instance, you're the judge of a contest for "cutest dog," and you want to weigh every puppy when it gets entered. It may be enough just to have a list of weights listed together.
+
+In R, we call this list of values a "vector." (We'll often use this word interchangeably with the word *list*, but it's maybe better to use *vector* because the other word also has other meanings in R.) And we can save the list like this:
+
+```{webr-r}
+#| label: vectors1
+dog_weight <- c(7, 40, 10, 14, 25, 8)
+```
+
+Notice that a vector needs three components:
+
+1. There's a `c` at the front.
+2. Parentheses surround everything.
+3. Values are separated by commas.
+
+As with saving any variable, it’ll look at first like nothing has happened, but we can type the variable name again to see what values are saved in it:
+
+```{webr-r}
+#| label: vectors2a
+dog_weight
+```
+
+### Now you try
+
+The following definition of a vector with four values has some problems with it. Can you fix them? When you click "Run Code" the error message should be able to give a little bit of guidance, but hints are available, too.
+
+```{webr-r}
+#| label: vectors2a
+kitten_weight <- 2, 4 5, 3,
+
+kitten_weight
+```
+
+```{r}
+#| echo: false
+#| output: asis
+check_button("2 4 5 3")
+```
+
+
+
