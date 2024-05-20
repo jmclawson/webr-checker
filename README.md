@@ -1,6 +1,10 @@
 # webr-checker
 Using javascript to check webr output for learnr-style feedback
 
+# Example
+
+See it in action [here](https://jmclawson.net/misc/webr-checker/01-start.html). Source available [here](01-start.qmd).
+
 # Get started
 
 1.  Follow instructions to use the [web-R extension](https://github.com/coatless/quarto-webr) for Quarto.

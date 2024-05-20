@@ -1,5 +1,6 @@
 ---
-title: "My WebR Demo"
+title: "Lesson 1: What's so good about R?"
+author: "James Clawson"
 format: html
 engine: knitr
 filters:                         
