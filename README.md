@@ -28,12 +28,23 @@ source("checker.R")
 ```
 ````
 
-4. After a code chunk that should be checked, add the following to insert a code button and feedback. The "solution" to the code chunk should get passed to the `check_button()` function:
+4. After a code chunk that should be checked, add the following to insert a code button and feedback. The "solution" to the code chunk should get passed to the `check_button()` function, as shown here:
 
 ````
+```{webr-r}
+#| label: vectors2a
+kitten_weight <- 2, 4 5, 3,
+
+kitten_weight
+```
+
 ```{r}
 #| echo: false
 #| output: asis
-check_button(1803)
+check_button("2 4 5 3")
 ```
 ````
+
+# Limitations
+There are many. Right now, it only verifies a string found in the results window, and it probably doesn't work for multiple lines. It might be worth looking into converting an R object to Javascript for better comparison. That's covered in the WebR documentation [here](https://docs.r-wasm.org/webr/latest/convert-r-to-js.html).
+

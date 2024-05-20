@@ -4,8 +4,9 @@ title: "About"
 
 Relevant links
 
-1. [Ted Laderas on web-R](https://vmst.io/@tladeras/112451071769147690)
-2. [Quarto web-R](https://quarto-webr.thecoatlessprofessor.com)
-3. [GitHub repository](https://github.com/jmclawson/webr-checker)
+1.    [WebR](https://docs.r-wasm.org/webr/latest/)
+2.    [Ted Laderas on WebR](https://vmst.io/@tladeras/112451071769147690)
+3.    [Quarto-webr](https://quarto-webr.thecoatlessprofessor.com)
+4.    [GitHub repository](https://github.com/jmclawson/webr-checker)
 
 Ultimately, I want something like [learnr](https://rstudio.github.io/learnr/). It's clear that `webr-checker` falls short of that goal, but it might be enough to get me started with web-r in the meantime.
