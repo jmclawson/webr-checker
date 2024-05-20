@@ -1,5 +1,5 @@
 ---
-title: "webr-trial"
+title: "webr-checker"
 ---
 
 This whole thing is an experiment combining Quarto, R, web-R, and JavaScript.
